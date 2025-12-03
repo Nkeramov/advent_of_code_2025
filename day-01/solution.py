@@ -31,7 +31,6 @@ def solve_part_2(data: list[str]) -> int:
     return zero_counter
 
 
-
 if __name__ == '__main__':
     test_data_filename = "test_input.txt"
     test_data = load_data(test_data_filename)
