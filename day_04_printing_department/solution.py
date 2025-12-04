@@ -1,10 +1,12 @@
 def load_data(filename: str) -> list[str]:
     return [line.strip() for line in open(filename, "r").readlines()]
 
+
 def build_map(data: list[str]) -> list[str]:
     width = len(data[0]) + 2
     _map = ["." * width] + ["." + row + "." for row in data] + ["." * width]
     return _map
+
 
 def find_accessible(_map):
     width = len(_map[0])
