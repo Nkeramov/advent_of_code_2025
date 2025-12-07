@@ -2,7 +2,7 @@ def load_data(filename: str) -> list[str]:
     return [line.strip() for line in open(filename, "r").readlines()]
 
 
-def solve_part_1(data: list[str]) -> set[int]:
+def solve_part_1(data: list[str]) -> int:
     fresh_ingredient_ranges = []
     i = 0
     while data[i] != '':
