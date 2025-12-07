@@ -1,5 +1,5 @@
-def load_data(filename: str) -> list[str]:
-    return [line.strip() for line in open(filename, "r").readlines()]
+def load_data(filename: str, is_raw: bool = False) -> list[str]:
+    return [line.strip("\n") if is_raw else line.strip() for line in open(filename, "r").readlines()]
 
 
 def build_map(data: list[str]) -> list[list[str]]:
